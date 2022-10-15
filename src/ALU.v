@@ -25,12 +25,14 @@ module ALU
 
 	localparam ADD  = 4'b0000;
 	localparam ADDI = 4'b0000;
+	localparam SUB  = 4'b0001;
 
    always @ (A_i or B_i or ALU_Operation_i)
      begin
 		case (ALU_Operation_i)
  
 			ADD:	ALU_Result_o = A_i + B_i;//tambien sirve para addi (tienen el mismo codigo)
+			SUB:	ALU_Result_o = A_i - B_i;
 	
 		default:
 			ALU_Result_o = 0;

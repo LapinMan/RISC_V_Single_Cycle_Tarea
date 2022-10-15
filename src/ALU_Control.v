@@ -30,6 +30,8 @@ module ALU_Control
 localparam R_Type_ADD  = 7'b0_000_000;
 //addi f7:x	 f3:0
 localparam I_Type_ADDI = 7'bx_001_000;
+//sub	 f7:1	 f3:0 
+localparam R_Type_SUB  = 7'b1_000_000;
 
 
 reg [3:0] alu_control_values;
@@ -42,6 +44,7 @@ always@(selector)begin
 
 		R_Type_ADD:  alu_control_values = 4'b0000;
 		I_Type_ADDI: alu_control_values = 4'b0000;// Usa el mismo de ADD
+		R_Type_SUB:  alu_control_values = 4'b0001;//Este ya es diferente
 
 		default: alu_control_values = 4'b00_00;
 	endcase
