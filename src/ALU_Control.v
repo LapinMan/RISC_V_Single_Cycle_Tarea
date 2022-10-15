@@ -33,7 +33,7 @@ localparam I_Type_ADDI = 7'bx_001_000;
 //sub	 f7:1	 f3:0 
 localparam R_Type_SUB  = 7'b1_000_000;
 //ori	 f7:x	 f3:6
-localparam I_Type_ORI  = 7'bx_000_110;
+localparam I_Type_ORI  = 7'bx_001_110;
 //slli f7:0 f3:1 
 localparam I_Type_SLLI = 7'b0_001_001;// faltaba indicar que es imm
 //srli f7:0  f3:5 

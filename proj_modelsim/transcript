@@ -1,23 +1,7 @@
-# Compile of Adder_32_Bits.v was successful.
-# Compile of ALU.v was successful.
-# Compile of ALU_Control.v was successful.
-# Compile of Control.v was successful.
-# Compile of Data_Memory.v was successful.
-# Compile of Decoder_Register_File.v was successful.
-# Compile of Immediate_Unit.v was successful.
-# Compile of Multiplexer_2_to_1.v was successful.
-# Compile of MUX_Register_File.v was successful.
-# Compile of PC_Register.v was successful.
-# Compile of Program_Memory.v was successful.
-# Compile of Register.v was successful.
-# Compile of Register_File.v was successful.
-# Compile of RISC_V_Single_Cycle.v was successful.
-# Compile of RISC_V_Single_Cycle_TB.v was successful.
-# 15 compiles, 0 failed with no errors.
 vsim work.RISC_V_Single_Cycle_TB -voptargs=+acc
 # vsim work.RISC_V_Single_Cycle_TB -voptargs="+acc" 
-# Start time: 17:11:35 on Oct 15,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 17:27:38 on Oct 15,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading work.RISC_V_Single_Cycle_TB(fast)
 # Loading work.RISC_V_Single_Cycle(fast)
 # Loading work.Control(fast)
@@ -53,10 +37,10 @@ run
 # Compile of RISC_V_Single_Cycle_TB.v was successful.
 # 15 compiles, 0 failed with no errors.
 vsim -voptargs=+acc work.RISC_V_Single_Cycle_TB
-# End time: 17:17:26 on Oct 15,2022, Elapsed time: 0:05:51
-# Errors: 0, Warnings: 3
+# End time: 17:35:37 on Oct 15,2022, Elapsed time: 0:07:59
+# Errors: 0, Warnings: 2
 # vsim -voptargs="+acc" work.RISC_V_Single_Cycle_TB 
-# Start time: 17:17:26 on Oct 15,2022
+# Start time: 17:35:38 on Oct 15,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.RISC_V_Single_Cycle_TB(fast)
 # Loading work.RISC_V_Single_Cycle(fast)
@@ -76,5 +60,5 @@ add wave -position end  sim:/RISC_V_Single_Cycle_TB/clk_tb
 add wave -position end  sim:/RISC_V_Single_Cycle_TB/reset_tb
 add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
 run
-# End time: 17:18:32 on Oct 15,2022, Elapsed time: 0:01:06
+# End time: 17:39:32 on Oct 15,2022, Elapsed time: 0:03:54
 # Errors: 0, Warnings: 1
