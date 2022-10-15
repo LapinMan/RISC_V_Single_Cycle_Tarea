@@ -35,7 +35,9 @@ localparam R_Type_SUB  = 7'b1_000_000;
 //ori	 f7:x	 f3:6
 localparam I_Type_ORI  = 7'bx_000_110;
 //slli f7:0 f3:1 
-localparam I_Type_SLLI = 7'b0_000_001;
+localparam I_Type_SLLI = 7'b0_001_001;// faltaba indicar que es imm
+//srli f7:0  f3:5 
+localparam I_Type_SRLI = 7'b0_001_101;
 
 reg [3:0] alu_control_values;
 wire [6:0] selector;
@@ -49,7 +51,8 @@ always@(selector)begin
 		I_Type_ADDI: alu_control_values = 4'b0000;// Usa el mismo de ADD
 		R_Type_SUB:  alu_control_values = 4'b0001;//Este ya es diferente
 		I_Type_ORI:  alu_control_values = 4'b0010;
-		I_Type_SLLI: alu_control_values = 4'b0100;
+		I_Type_SLLI: alu_control_values = 4'b0011;// Estaba mal puesto el numero
+		I_Type_SRLI: alu_control_values = 4'b0100;
 
 		default: alu_control_values = 4'b00_00;
 	endcase
