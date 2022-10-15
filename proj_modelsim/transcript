@@ -1,0 +1,213 @@
+vsim work.RISC_V_Single_Cycle_TB -voptargs=+acc
+# vsim work.RISC_V_Single_Cycle_TB -voptargs="+acc" 
+# Start time: 15:27:09 on Oct 15,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v(80): (vopt-2685) [TFMPC] - Too few port connections for 'CONTROL_UNIT'.  Expected 8, found 7.
+# ** Warning: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'Branch_o'.
+# ** Warning: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v(185): (vopt-2685) [TFMPC] - Too few port connections for 'ALU_UNIT'.  Expected 5, found 4.
+# ** Warning: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v(185): (vopt-2718) [TFMPC] - Missing connection for port 'Zero_o'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# Loading work.RISC_V_Single_Cycle_TB(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control(fast)
+# Loading work.PC_Register(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.Adder_32_Bits(fast)
+# Loading work.Register_File(fast)
+# Loading work.Decoder_Register_File(fast)
+# Loading work.Register(fast)
+# Loading work.MUXRegisterFile(fast)
+# Loading work.Immediate_Unit(fast)
+# Loading work.Multiplexer_2_to_1(fast)
+# Loading work.ALU_Control(fast)
+# Loading work.ALU(fast)
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/clk_tb
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/reset_tb
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
+run
+# Causality operation skipped due to absence of debug database file
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# 15 compiles, 0 failed with no errors.
+run
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# 15 compiles, 0 failed with no errors.
+run
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_TB
+# End time: 15:38:52 on Oct 15,2022, Elapsed time: 0:11:43
+# Errors: 0, Warnings: 7
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_TB 
+# Start time: 15:38:52 on Oct 15,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_TB(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control(fast)
+# Loading work.PC_Register(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.Adder_32_Bits(fast)
+# Loading work.Register_File(fast)
+# Loading work.Decoder_Register_File(fast)
+# Loading work.Register(fast)
+# Loading work.MUXRegisterFile(fast)
+# Loading work.Immediate_Unit(fast)
+# Loading work.Multiplexer_2_to_1(fast)
+# Loading work.ALU_Control(fast)
+# Loading work.ALU(fast)
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
+run
+run
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_TB
+# End time: 15:41:33 on Oct 15,2022, Elapsed time: 0:02:41
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_TB 
+# Start time: 15:41:33 on Oct 15,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v(78): (vopt-2685) [TFMPC] - Too few port connections for 'CONTROL_UNIT'.  Expected 8, found 7.
+# ** Warning: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v(78): (vopt-2718) [TFMPC] - Missing connection for port 'Branch_o'.
+# ** Warning: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v(182): (vopt-2685) [TFMPC] - Too few port connections for 'ALU_UNIT'.  Expected 5, found 4.
+# ** Warning: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v(182): (vopt-2718) [TFMPC] - Missing connection for port 'Zero_o'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# Loading work.RISC_V_Single_Cycle_TB(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control(fast)
+# Loading work.PC_Register(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.Adder_32_Bits(fast)
+# Loading work.Register_File(fast)
+# Loading work.Decoder_Register_File(fast)
+# Loading work.Register(fast)
+# Loading work.MUXRegisterFile(fast)
+# Loading work.Immediate_Unit(fast)
+# Loading work.Multiplexer_2_to_1(fast)
+# Loading work.ALU_Control(fast)
+# Loading work.ALU(fast)
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/clk_tb
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/reset_tb
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
+run
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# 15 compiles, 0 failed with no errors.
+run
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_TB
+# End time: 15:50:52 on Oct 15,2022, Elapsed time: 0:09:19
+# Errors: 0, Warnings: 6
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_TB 
+# Start time: 15:50:52 on Oct 15,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.RISC_V_Single_Cycle_TB(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control(fast)
+# Loading work.PC_Register(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.Adder_32_Bits(fast)
+# Loading work.Register_File(fast)
+# Loading work.Decoder_Register_File(fast)
+# Loading work.Register(fast)
+# Loading work.MUXRegisterFile(fast)
+# Loading work.Immediate_Unit(fast)
+# Loading work.Multiplexer_2_to_1(fast)
+# Loading work.ALU_Control(fast)
+# Loading work.ALU(fast)
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/clk_tb
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/reset_tb
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
+run
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# 15 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.RISC_V_Single_Cycle_TB
+# End time: 16:19:08 on Oct 15,2022, Elapsed time: 0:28:16
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_TB 
+# Start time: 16:19:08 on Oct 15,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.RISC_V_Single_Cycle_TB(fast)
+# Loading work.RISC_V_Single_Cycle(fast)
+# Loading work.Control(fast)
+# Loading work.PC_Register(fast)
+# Loading work.Program_Memory(fast)
+# Loading work.Adder_32_Bits(fast)
+# Loading work.Register_File(fast)
+# Loading work.Decoder_Register_File(fast)
+# Loading work.Register(fast)
+# Loading work.MUXRegisterFile(fast)
+# Loading work.Immediate_Unit(fast)
+# Loading work.Multiplexer_2_to_1(fast)
+# Loading work.ALU_Control(fast)
+# Loading work.ALU(fast)
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/clk_tb
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/reset_tb
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
+run
+# End time: 16:26:39 on Oct 15,2022, Elapsed time: 0:07:31
+# Errors: 0, Warnings: 1
