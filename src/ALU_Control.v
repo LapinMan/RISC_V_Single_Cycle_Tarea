@@ -24,7 +24,7 @@ module ALU_Control
 );
 
 
-
+//ALUOp se saca de Control
 //funct7_ALUOp_func3
 //add  f7:0  f3:0 
 localparam R_Type_ADD  = 7'b0_000_000;
@@ -38,6 +38,9 @@ localparam I_Type_ORI  = 7'bx_001_110;
 localparam I_Type_SLLI = 7'b0_001_001;// faltaba indicar que es imm
 //srli f7:0  f3:5 
 localparam I_Type_SRLI = 7'b0_001_101;
+//lui	 f7:x  f3:x  
+localparam U_Type_LUI  = 7'bx_010_xxx;
+
 
 reg [3:0] alu_control_values;
 wire [6:0] selector;
@@ -53,6 +56,7 @@ always@(selector)begin
 		I_Type_ORI:  alu_control_values = 4'b0010;
 		I_Type_SLLI: alu_control_values = 4'b0011;// Estaba mal puesto el numero
 		I_Type_SRLI: alu_control_values = 4'b0100;
+		U_Type_LUI:  alu_control_values = 4'b0101;
 
 		default: alu_control_values = 4'b00_00;
 	endcase

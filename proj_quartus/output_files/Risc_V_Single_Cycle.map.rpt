@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Risc_V_Single_Cycle
-Sat Oct 15 17:35:15 2022
+Sat Oct 15 17:44:50 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -87,7 +87,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 15 17:35:15 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 15 17:44:50 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Risc_V_Single_Cycle                         ;
 ; Top-level Entity Name              ; RISC_V_Single_Cycle                         ;
@@ -208,26 +208,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                ; Library ;
-+----------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
-; ../src/RISC_V_Single_Cycle.v                 ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v   ;         ;
-; ../src/Register_File.v                       ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Register_File.v         ;         ;
-; ../src/Register.v                            ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Register.v              ;         ;
-; ../src/Program_Memory.v                      ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Program_Memory.v        ;         ;
-; ../src/PC_Register.v                         ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/PC_Register.v           ;         ;
-; ../src/MUX_Register_File.v                   ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/MUX_Register_File.v     ;         ;
-; ../src/Multiplexer_2_to_1.v                  ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Multiplexer_2_to_1.v    ;         ;
-; ../src/Immediate_Unit.v                      ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Immediate_Unit.v        ;         ;
-; ../src/Decoder_Register_File.v               ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Decoder_Register_File.v ;         ;
-; ../src/Control.v                             ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Control.v               ;         ;
-; ../src/ALU_Control.v                         ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/ALU_Control.v           ;         ;
-; ../src/ALU.v                                 ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/ALU.v                   ;         ;
-; ../src/Adder_32_Bits.v                       ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Adder_32_Bits.v         ;         ;
-; /projects/risc_v_single_cycle/src/test_2.dat ; yes             ; Auto-Found Unspecified File  ; /projects/risc_v_single_cycle/src/test_2.dat                ;         ;
-+----------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path           ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                ; Library ;
++--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+; ../src/RISC_V_Single_Cycle.v               ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v   ;         ;
+; ../src/Register_File.v                     ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Register_File.v         ;         ;
+; ../src/Register.v                          ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Register.v              ;         ;
+; ../src/Program_Memory.v                    ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Program_Memory.v        ;         ;
+; ../src/PC_Register.v                       ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/PC_Register.v           ;         ;
+; ../src/MUX_Register_File.v                 ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/MUX_Register_File.v     ;         ;
+; ../src/Multiplexer_2_to_1.v                ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Multiplexer_2_to_1.v    ;         ;
+; ../src/Immediate_Unit.v                    ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Immediate_Unit.v        ;         ;
+; ../src/Decoder_Register_File.v             ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Decoder_Register_File.v ;         ;
+; ../src/Control.v                           ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Control.v               ;         ;
+; ../src/ALU_Control.v                       ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/ALU_Control.v           ;         ;
+; ../src/ALU.v                               ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/ALU.v                   ;         ;
+; ../src/Adder_32_Bits.v                     ; yes             ; User Verilog HDL File        ; C:/Projects/RISC_V_Single_Cycle/src/Adder_32_Bits.v         ;         ;
+; /projects/risc_v_single_cycle/src/text.dat ; yes             ; Auto-Found Unspecified File  ; /projects/risc_v_single_cycle/src/text.dat                  ;         ;
++--------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -756,7 +756,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat Oct 15 17:35:06 2022
+    Info: Processing started: Sat Oct 15 17:44:41 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Risc_V_Single_Cycle -c Risc_V_Single_Cycle
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -794,7 +794,7 @@ Info (12127): Elaborating entity "RISC_V_Single_Cycle" for the top level hierarc
 Info (12128): Elaborating entity "Control" for hierarchy "Control:CONTROL_UNIT" File: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 89
 Info (12128): Elaborating entity "PC_Register" for hierarchy "PC_Register:PROGRAM_COUNTER" File: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 97
 Info (12128): Elaborating entity "Program_Memory" for hierarchy "Program_Memory:PROGRAM_MEMORY" File: C:/Projects/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v Line: 107
-Warning (10850): Verilog HDL warning at Program_Memory.v(34): number of words (8) in memory file does not match the number of elements in the address range [0:63] File: C:/Projects/RISC_V_Single_Cycle/src/Program_Memory.v Line: 34
+Warning (10850): Verilog HDL warning at Program_Memory.v(34): number of words (7) in memory file does not match the number of elements in the address range [0:63] File: C:/Projects/RISC_V_Single_Cycle/src/Program_Memory.v Line: 34
 Warning (10030): Net "rom.data_a" at Program_Memory.v(30) has no driver or initial value, using a default initial value '0' File: C:/Projects/RISC_V_Single_Cycle/src/Program_Memory.v Line: 30
 Warning (10030): Net "rom.waddr_a" at Program_Memory.v(30) has no driver or initial value, using a default initial value '0' File: C:/Projects/RISC_V_Single_Cycle/src/Program_Memory.v Line: 30
 Warning (10030): Net "rom.we_a" at Program_Memory.v(30) has no driver or initial value, using a default initial value '0' File: C:/Projects/RISC_V_Single_Cycle/src/Program_Memory.v Line: 30
@@ -817,9 +817,9 @@ Info (21057): Implemented 2 device resources after synthesis - the final resourc
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4753 megabytes
-    Info: Processing ended: Sat Oct 15 17:35:15 2022
+    Info: Peak virtual memory: 4749 megabytes
+    Info: Processing ended: Sat Oct 15 17:44:50 2022
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:21
 
 

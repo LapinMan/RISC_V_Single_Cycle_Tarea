@@ -29,6 +29,7 @@ module ALU
 	localparam ORI  = 4'b0010;
 	localparam SLLI = 4'b0011;
 	localparam SRLI = 4'b0100;
+	localparam LUI  = 4'b0101;
 
    always @ (A_i or B_i or ALU_Operation_i)
      begin
@@ -39,6 +40,7 @@ module ALU
 			ORI:	ALU_Result_o = A_i | B_i;
 			SLLI:	ALU_Result_o = A_i << B_i[4:0]; // Le faltaba el [4:0]
 			SRLI:	ALU_Result_o = A_i >> B_i[4:0];
+			LUI:	ALU_Result_o = B_i;
 	
 		default:
 			ALU_Result_o = 0;

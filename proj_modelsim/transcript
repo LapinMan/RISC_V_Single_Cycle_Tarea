@@ -1,25 +1,3 @@
-vsim work.RISC_V_Single_Cycle_TB -voptargs=+acc
-# vsim work.RISC_V_Single_Cycle_TB -voptargs="+acc" 
-# Start time: 17:27:38 on Oct 15,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.RISC_V_Single_Cycle_TB(fast)
-# Loading work.RISC_V_Single_Cycle(fast)
-# Loading work.Control(fast)
-# Loading work.PC_Register(fast)
-# Loading work.Program_Memory(fast)
-# Loading work.Adder_32_Bits(fast)
-# Loading work.Register_File(fast)
-# Loading work.Decoder_Register_File(fast)
-# Loading work.Register(fast)
-# Loading work.MUXRegisterFile(fast)
-# Loading work.Immediate_Unit(fast)
-# Loading work.Multiplexer_2_to_1(fast)
-# Loading work.ALU_Control(fast)
-# Loading work.ALU(fast)
-add wave -position end  sim:/RISC_V_Single_Cycle_TB/clk_tb
-add wave -position end  sim:/RISC_V_Single_Cycle_TB/reset_tb
-add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
-run
 # Compile of Adder_32_Bits.v was successful.
 # Compile of ALU.v was successful.
 # Compile of ALU_Control.v was successful.
@@ -36,11 +14,9 @@ run
 # Compile of RISC_V_Single_Cycle.v was successful.
 # Compile of RISC_V_Single_Cycle_TB.v was successful.
 # 15 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.RISC_V_Single_Cycle_TB
-# End time: 17:35:37 on Oct 15,2022, Elapsed time: 0:07:59
-# Errors: 0, Warnings: 2
-# vsim -voptargs="+acc" work.RISC_V_Single_Cycle_TB 
-# Start time: 17:35:38 on Oct 15,2022
+vsim work.RISC_V_Single_Cycle_TB -voptargs=+acc
+# vsim work.RISC_V_Single_Cycle_TB -voptargs="+acc" 
+# Start time: 17:45:24 on Oct 15,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.RISC_V_Single_Cycle_TB(fast)
 # Loading work.RISC_V_Single_Cycle(fast)
@@ -60,5 +36,38 @@ add wave -position end  sim:/RISC_V_Single_Cycle_TB/clk_tb
 add wave -position end  sim:/RISC_V_Single_Cycle_TB/reset_tb
 add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
 run
-# End time: 17:39:32 on Oct 15,2022, Elapsed time: 0:03:54
-# Errors: 0, Warnings: 1
+add wave -position end sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/*
+add wave -position end sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/*
+add wave -position end sim:/RISC_V_Single_Cycle_TB/DUV/ALU_CONTROL_UNIT/*
+run
+add wave -position 6  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/Branch_o
+add wave -position 7  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/Mem_Read_o
+add wave -position 8  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/Mem_to_Reg_o
+add wave -position 9  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/Mem_Write_o
+add wave -position 10  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/ALU_Src_o
+add wave -position 11  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/Reg_Write_o
+add wave -position 12  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/ALU_Op_o
+add wave -position 6  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/U_Type
+run
+# Causality operation skipped due to absence of debug database file
+add wave -position 6  sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/OP_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/PROGRAM_MEMORY/Address_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/PROGRAM_MEMORY/Instruction_o
+run
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_t0/DataInput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_t0/DataOutput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_t1/DataInput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_t1/DataOutput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_t2/DataInput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_t2/DataOutput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_s0_fp/DataInput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_s0_fp/DataOutput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_s1/DataInput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_s1/DataOutput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_s2/DataInput
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/REGISTER_FILE_UNIT/Register_s2/DataOutput
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Projects/RISC_V_Single_Cycle/proj_modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Projects/RISC_V_Single_Cycle/proj_modelsim/wave.do
+# End time: 18:10:24 on Oct 15,2022, Elapsed time: 0:25:00
+# Errors: 0, Warnings: 2
